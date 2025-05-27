@@ -29,7 +29,8 @@ jobs:
 
       - name: 🧪 Run Unit Tests
         run: CI=true npm run test
-
+      - name: 📥 run the server
+        run: npm run dev
       - name: 📥 Install Playwright Browsers
         run: npx playwright install --with-deps
 
