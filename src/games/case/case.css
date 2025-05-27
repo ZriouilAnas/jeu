@@ -1,0 +1,87 @@
+.chest-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6b6b6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.chest {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  background-color: #8b4513;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chest-lid {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  background-color: #a0522d;
+  top: calc(50% - 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px 5px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.chest-lid::before {
+  content: "";
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  background-color: #696969;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+.chest-input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 160px;
+  padding: 10px;
+  background-color: #2d2d2d;
+  border: 3px solid #1a1a1a;
+  color: white;
+  font-family: "Minecraft", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+}
+
+.checkSecret {
+  z-index: 2;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 5vh;
+  width: 5vw;
+}
+
+.chest-input:focus {
+  border-color: #3d3d3d;
+}
+
+.chest-input:focus ~ .chest-lid {
+  transform: translate(-50%, -50%) rotateX(30deg);
+}
+
+@media (max-width: 480px) {
+  .chest-container {
+    transform: scale(0.8);
+  }
+}
