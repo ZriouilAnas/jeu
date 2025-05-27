@@ -7,7 +7,7 @@ function Winner() {
     <>
       <div className="winner-container">
         <h1>Who is a good boy</h1>
-        <h3>You: whoof </h3>
+        <h3>whoof</h3>
         <h2>Yes you are!!</h2>
         <h4>You have won</h4>
         <button

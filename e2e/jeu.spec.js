@@ -101,7 +101,7 @@ test("test", async ({ page }) => {
   });
   await page.getByRole("textbox", { name: "word" }).fill("dog");
   await page.getByRole("heading", { name: "Who is a good boy" }).click();
-  await page.getByRole("heading", { name: "You: whoof" }).click();
+  await page.getByRole("heading", { name: "whoof" }).click();
   await page.getByRole("heading", { name: "Yes you are!!" }).click();
   await page.getByRole("heading", { name: "You have won" }).click();
 });
