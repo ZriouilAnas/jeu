@@ -1,6 +1,6 @@
 import React from "react";
 import "./reward.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import mySong from "./rewardcut.mp3";
 
 function Reward() {

@@ -20,7 +20,7 @@ function Word() {
   const handleChange = (e) => {
     const value = e.target.value.trim().toLowerCase();
     setInputValue(value);
-    if (value === "dog") {
+    if (value === word) {
       setTimeout(() => alert("you won"), 300);
       navigate("/winner");
     }
