@@ -28,7 +28,7 @@ jobs:
         run: npm run lint
 
       - name: 🧪 Run Unit Tests
-        run: CI=true npm run test -- --coverage
+        run: CI=true npm run test
 
       - name: 📥 Install Playwright Browsers
         run: npx playwright install --with-deps
